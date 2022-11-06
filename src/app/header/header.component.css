@@ -1,0 +1,14 @@
+.banner{
+
+    background-color: rgb(221, 204, 174);
+    height:30%;
+    
+}
+h2, h3{
+    text-align: center;
+}
+
+img{
+    width:150px;
+    heigth:150px;
+}
