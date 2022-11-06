@@ -1,27 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./product.component.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="product">
 
-        <img src="https://imgur.com/r/Pizza/tA6fxuD" alt="">
-        <span class="name">Пицца</span>
-        <div class="price">
-            <span class="price">500</span>
-            <span class="weight">300 g</span>
-        </div>
+<div class="product">
+    <img [src]="product.imgUrl" alt="">
+    <span class="name">{{product.name}}</span>
+    <div class="price">
+        <span class="price">{{product.price}}</span>
+        <span class="weight">{{product.weight}} g</span>
     </div>
-    <div class="description">Пицца с ветчиной  и грибами</div>
+
+    <div class="description">{{product.description}}</div>
     <div class="cart-actions">
         <input type="Количество">
         <button>+</button>
         <button>-</button>
     </div>
-</body>
-</html>
+</div>
