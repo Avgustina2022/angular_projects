@@ -1,4 +1,16 @@
-.product{
-    width: 200px;
+.product-container{
+    min-width: 200px;
     height:200px;
 }
+.product > img{
+    width:200px;
+    height:200px;
+
+}
+
+.product .description{
+
+    word-break:break-world;
+    width:200px;
+}
+

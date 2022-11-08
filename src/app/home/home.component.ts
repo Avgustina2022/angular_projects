@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  products:Product[];
+
+  
+  constructor(private productService: ProductService) { 
+
+    this.products= productService.products;
+  }
 
   ngOnInit(): void {
+
+    this.productService.getProducts().subscribe((res)=>this.products=res);
   }
 
 }
