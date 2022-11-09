@@ -7,8 +7,16 @@
     <div class="description">{{product.components}}</div>
     <div class="cart-actions">
         <input type="Количество">
-        <button>+</button>
-        <button>-</button>
+        
+        <button(click)="increaseQuantity()">+</button>
+        <input type="number"[value]="quantity">
+       
+        <button (click)="decreaseQuantity()">-</button>
+        <div class="add-to-cart">
+
+            <a href="#"(click)="addToCart()">Добавить в корзину</a>
+        </div>
+
     </div>
 </div>
     

@@ -7,11 +7,26 @@ import { Product } from '../services/product-service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  @Input() product!:Product;
+  @Input() inputproduct!:Product;
+quantity: number=1;
   
-  constructor() {}
+  constructor(private cartService:CartService) {}
 
   ngOnInit(): void {
   }
+increaseQuantity(){
+  this.quantity++;
+}
 
+decreaseQuantity(){
+  if (this.quantity>1){
+    this.quantity--;
+    this.addToCart(){
+      this.cartService.addToCart(
+        this.inputproduct
+      );
+    }
+  }
+}
+addToCart()
 }
