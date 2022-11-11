@@ -9,12 +9,12 @@ export class ProductService{
     private httpClient: HttpClient
   ) {}
       
-  public getProducts(): Observable<Product[]>{
+  public getProducts(): Observable<Product[]> {
     return this.httpClient.get<Product[]>('https://pet-esteban.ru/ited-api/marketplace/users/irina/data');
   }
 }
 
-export interface Product{   
+export interface Product {   
   name: string;
   price: number;
   components: string;
