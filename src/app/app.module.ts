@@ -3,12 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ProductComponent } from './product/product.component';
-import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ProductComponent } from './components/pages/home/product/product.component';
+import { HomeComponent } from './components/pages/home/home.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product-service';
-import { CartComponent } from './product/page/cart/cart.component';
+import { CartComponent} from './components/pages/cart/cart.component';
+import { CartService } from './services/cart-service';
 
 @NgModule({
   declarations: [

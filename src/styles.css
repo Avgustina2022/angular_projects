@@ -4,8 +4,20 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body * {
     box-sizing: inherit;
 }
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+

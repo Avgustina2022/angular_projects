@@ -1,0 +1,22 @@
+<div class="product">
+    <img [src]="inputProduct.image" alt="">
+
+    <span class="name">Пицца {{ inputProduct.name }}</span>
+
+    <div class="price">
+        <span class="price">{{ inputProduct.price }}р.</span>
+    </div>
+
+    <div class="description">{{ inputProduct.components }}</div>
+
+    <div class="cart-actions">
+        <button (click)="increaseQuantity()">+</button>
+        <input type="number"[value]="quantity">
+        <button (click)="decreaseQuantity()">-</button>
+    </div>
+    
+    <div class="add-to-cart">
+        <a href="#" (click)="addToCart()">Добавить в корзину</a>
+    </div>
+</div>
+    
